@@ -1,0 +1,11 @@
+<div class="wrapper">       
+    <div align="center"><input type="text" [(ngModel)]="searchStr" (keyup)="changeText()" name="searchStr" placeholder="Planet Search" required="" autofocus="" /></div>
+    <p>Value: {{ searchStr }}</p>
+<hr>
+<!-- calcHeight(planet.population)} -->
+<div *ngFor="let planet of planets" [ngStyle]="setMyStyles(planet.population)">
+  {{ planet.name }} -> {{ planet.population }} -> {{ calcHeight(planet.population) }}
+</div>
+
+<!-- <div align="center"><button (click)="showPlanets()" class="btn btn-primary">Call Planets</button></div> -->
+</div>

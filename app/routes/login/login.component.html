@@ -1,0 +1,6 @@
+<div class="wrapper">       
+    <div align="center"><input type="text" [(ngModel)]="loginPerson.name" name="username" placeholder="Hero Name" required="" autofocus="" /></div>
+    <div align="center"><input type="password" [(ngModel)]="loginPerson.pass" name="password" placeholder="Password" required=""/></div>      
+    <div align="center"><button (click)="onClick()" class="btn btn-primary">Login</button></div>
+    <p>Value: {{ loginPerson.name }}</p>
+</div>
